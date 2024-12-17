@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+    text-align: center; /* Center header text */
+    color: #333; /* Text color */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #555;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Center images in their cells */
+    padding: 10px;
+}
+
+.image-item {
+    text-align: center; /* Align names under images */
+}
+
+.image-item img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Set max width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Back Button Styles */
+.back-button {
+    display: inline-block;
+    margin: 30px auto; /* Center button and add space */
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow button */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.back-button:hover {
+    background-color: #ff9800; /* Darker yellow on hover */
+    color: #fff; /* White text on hover */
+}

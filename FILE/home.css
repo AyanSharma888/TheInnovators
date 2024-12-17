@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/bg.jpg'); /* Replace with the image URL */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    
+}
+
+/* Typing animation */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Erasing animation */
+@keyframes erasing {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Cursor blinking animation */
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+/* Typing effect for header text */
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    font-family: 'Lilita One', cursive;  /* Apply the Lilita One font */
+    animation: typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite, erasing 4s steps(20) 1s infinite;
+    font-size: 29px;
+    font-stretch: semi-expanded;
+}
+/* Dark Mode Styles */
+.dark:bg-gray-800 {
+    background-color: #d01c1c;
+}
+
+.dark:bg-gray-900 {
+    background-color:rgb(135, 206, 235);
+}
+
+.dark:text-white {
+    color: white;
+}
+
+.dark:text-gray-300 {
+    color: #0a68f5;
+}
+
+.dark:hover:bg-gray-700 {
+    background-color:rgb(135, 206, 235);
+}
+
+/* Sidebar Styles */
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #140e0e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 120px;
+}
+
+
+
+
+
+header .user-options button {
+    background:black;
+    border: none;
+    font-size: 20px;
+    color: rgb(135, 206, 235);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            background: #093e51;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+            padding: 0;
+}
+
+.sidebar-item {
+    padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+}
+
+.sidebar-item:hover {
+    background-color:rgb(135, 206, 235);
+}
+
+/* Main Content */
+main {
+    margin-right: 260px; /* Matches sidebar width + spacing */
+            padding: 20px;
+            
+}
+
+.video-feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.video-info .channel {
+    font-size: 14px;
+    color: #555;
+}
+.round-image {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    border: 2px solid #ccc; /* Optional: adds a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+}
+
+.flex items-center justify-between p-4 bg-white bg-gray-900 shadow-md{
+
+}
+
+
+
+position: absolute;
+top: 0;
+right: 0;
+margin-top: 20px;
+width: 200px;
+ 
+
+list-style: none;
+padding: 0; 
+     
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: right; 
+    
+    flex: 1;
+    padding: 20px;
+
+ .video-player{
+    align-items: center;
+ }
